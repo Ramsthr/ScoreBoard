@@ -19,6 +19,11 @@ body {
   );
 }
 
+.webname h1{
+  color: #009432;
+  font-style: bold;
+
+}
 .container {
   display: flex;
   position: fixed;
@@ -69,6 +74,60 @@ button#increment {
   background: #c4e538;
 }
 button#increment:hover {
+  background: #009432;
+  color: #fff;
+}
+
+.container1 {
+  display: flex;
+  position: fixed;
+  right: 70px;
+  bottom: 300px;
+}
+
+.card-body1 {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+.card-body1 title1{
+    color: #009432;
+    background-color: #009432;
+}
+.card-body1 h1 {
+  margin-bottom: 15px;
+  font-size: 70px;
+}
+.card-btn1 button {
+  border-radius: 5px;
+  color: #262626;
+  padding: 10px 35px;
+  border: 0;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button#decrement1 {
+  background: #f6e58d;
+}
+button#decrement1:hover {
+  background: #f79f1f;
+  color: #fff;
+}
+button#reset1 {
+  background: #f3a683;
+}
+button#reset1:hover {
+  background: #ea2027;
+  color: #fff;
+}
+button#increment1 {
+  background: #c4e538;
+}
+button#increment1:hover {
   background: #009432;
   color: #fff;
 }
