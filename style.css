@@ -11,28 +11,32 @@ body {
 
 
 body {
-  background: rgb(255, 132, 100);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 132, 100, 1) 0%,
-    rgba(253, 105, 165, 1) 100%
-  );
+  margin: 0;
+  padding: 0;
+  background-image: url('C:/Users/Dell/Desktop/pp/ScoreBoard/bdmt.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-repeat: no-repeat;
+  background-size: cover
 }
 
 .webname h1{
-  color: #009432;
+  color: #f1f8f4;
   font-style: bold;
 
 }
 .container {
   display: flex;
   position: fixed;
-  right: 700px;
+  right: 800px;
   bottom: 300px;
 }
-
+#p1{
+  font-size: 40px;
+  font-weight: bold;
+  color: blue;
+  border-bottom: 1px solid black;
+}
 .card-body {
-  background: #fff;
+  background-color: white;
   padding: 25px;
   border-radius: 10px;
   text-align: center;
@@ -45,6 +49,7 @@ body {
   margin-bottom: 15px;
   font-size: 70px;
 }
+
 .card-btn button {
   border-radius: 5px;
   color: #262626;
@@ -130,4 +135,23 @@ button#increment1 {
 button#increment1:hover {
   background: #009432;
   color: #fff;
+}
+
+button#gameoverbtn{
+      padding: 15px 25px;
+      background-color: hsl(2, 81%, 43%);
+      
+      color: #f1f8f4;
+      border-radius:20px ;
+      
+      position: fixed;
+      right:625px;
+      bottom: 200px;
+      box-shadow:2px 2px 0 #da1117;
+      transition: transform 0.2s, box-shadow 0.2s;
+      
+}
+button#gameoverbtn:active{
+  transform: translateX(4px) translateY(4px);
+box-shadow: 0 0 0 #da1117;
 }

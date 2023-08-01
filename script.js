@@ -41,3 +41,19 @@ btnReset1.addEventListener('click', () => {
   curValue1 = 0;
   mainTitle1.textContent = curValue1;
 });
+
+const gmbutton = document.getElementById('gameoverbtn');
+
+    // Add a click event listener to the button
+    button.addEventListener('click', function() {
+      // Your functionality code goes here
+      function displayWinner() {
+        if (curValue > curValue1) {
+          winnerMessage.textContent = 'Player A is the winner!';
+        } else if (curValue < curValue1) {
+          winnerMessage.textContent = 'Player B is the winner!';
+        } else {
+          winnerMessage.textContent = 'It\'s a tie!';
+        }
+      }
+    });
