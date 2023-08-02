@@ -48,15 +48,26 @@ function redirectToNewPage() {
   // Replace "newpage.html" with the URL of the page you want to redirect to
   window.location.href = "win.html";
 }
+function redirectToNewPage2() {
+  // Replace "newpage.html" with the URL of the page you want to redirect to
+  window.location.href = "win2.html";
+}
+function redirectToNewPage3() {
+  // Replace "newpage.html" with the URL of the page you want to redirect to
+  window.location.href = "tie.html";
+}
+
+gmbutton.addEventListener('click', ()=>{
+  if (curValue > curValue1) {
+    document.getElementById("gameoverbtn").onclick = redirectToNewPage;
+  } else if (curValue < curValue1) {
+    document.getElementById("gameoverbtn").onclick = redirectToNewPage2;
+  } else {
+    document.getElementById("gameoverbtn").onclick = redirectToNewPage3;
+  }
+});
+
 document.getElementById("gameoverbtn").onclick = redirectToNewPage;
 
 
-    gmbutton.addEventListener('click', ()=>{
-        if (curValue > curValue1) {
-          winnerMessage.textContent = 'Player A is the winner!';
-        } else if (curValue < curValue1) {
-          winnerMessage.textContent = 'Player B is the winner!';
-        } else {
-          winnerMessage.textContent = 'It\'s a tie!';
-        }
-      });
+
