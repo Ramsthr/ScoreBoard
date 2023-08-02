@@ -160,3 +160,26 @@ button#gameoverbtn:active{
   transform: translateX(4px) translateY(4px);
 box-shadow: 0 0 0 #da1117;
 }
+
+/* winner html file animation */
+
+
+
+
+.winner-animation h1 {
+  position: fixed;
+  right: 15px;
+  bottom: 300px;
+  font-size: 80px;
+  font-weight: bold;
+  animation: winnerAnimation 1s alternate infinite;
+}
+
+@keyframes winnerAnimation {
+  0% {
+    color: #0059ff; /* Starting color */
+  }
+  100% {
+    color: #00ff55; /* Ending color */
+  }
+}
