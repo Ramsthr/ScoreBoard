@@ -50,11 +50,8 @@ function redirectToNewPage() {
 }
 document.getElementById("gameoverbtn").onclick = redirectToNewPage;
 
-/*
-    // Add a click event listener to the button
-    button.addEventListener('click', function() {
-      // Your functionality code goes here
-      function displayWinner() {
+
+    gmbutton.addEventListener('click', ()=>{
         if (curValue > curValue1) {
           winnerMessage.textContent = 'Player A is the winner!';
         } else if (curValue < curValue1) {
@@ -62,6 +59,4 @@ document.getElementById("gameoverbtn").onclick = redirectToNewPage;
         } else {
           winnerMessage.textContent = 'It\'s a tie!';
         }
-      }
-    });
-    */
+      });
