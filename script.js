@@ -44,6 +44,13 @@ btnReset1.addEventListener('click', () => {
 
 const gmbutton = document.getElementById('gameoverbtn');
 
+function redirectToNewPage() {
+  // Replace "newpage.html" with the URL of the page you want to redirect to
+  window.location.href = "win.html";
+}
+document.getElementById("gameoverbtn").onclick = redirectToNewPage;
+
+/*
     // Add a click event listener to the button
     button.addEventListener('click', function() {
       // Your functionality code goes here
@@ -57,3 +64,4 @@ const gmbutton = document.getElementById('gameoverbtn');
         }
       }
     });
+    */
